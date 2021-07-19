@@ -1,0 +1,63 @@
+.wrapper {
+  width: 250px;
+  height: 100vh;
+}
+
+ul.accordion-widget {
+  width: 100%;
+  max-height: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul li.accordion-title {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  background-color: #d8d8dd;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  color: #808080;
+}
+
+ul.accordion-submenu {
+  text-decoration: none;
+  list-style-type: none;
+  transition: max-height 0.6s ease;
+  max-height: 0px;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+ul.accordion-submenu.active {
+}
+
+.chevron {
+  margin-right: 5px;
+  transition: transform 0.8s ease;
+}
+.chevron.rotate {
+  transform: rotate(90deg);
+}
+
+.more-icon {
+  position: absolute;
+  right: 20px;
+}
+li.accordion-menu-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+li.accordion-menu-item:hover {
+  background-color: #fff;
+}
